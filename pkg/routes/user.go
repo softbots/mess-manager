@@ -7,7 +7,7 @@ import (
 )
 
 func UserRoutes(e *echo.Echo) {
-	user := e.Group("/users")
+	user := e.Group("/users/")
 
-	user.POST("/register", controllers.SignUp)
+	user.POST("register", controllers.SignUp)
 }
